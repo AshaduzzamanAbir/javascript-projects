@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,html{
+  background-color: #6665ee;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+.container {
+  width: 600px;
+  height: 340px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.box h3 {
+  font-size: 26px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form input {
+  margin: 10px 0;
+  outline: none;
+  border: 1px solid#6665ee;
+}
+.messageBox {
+  width: 500px;
+  height: 40px;
+  font-size: 26px;
+  padding: 0 10px;
+  color: #6665ee;
+}
+.submitButton {
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: all .3s;
+  color: #6665ee;
+  font-size: 16px;
+}
+.submitButton:hover{
+  background: #6665ee; 
+  color: rgba(248, 248, 248, 0.856);
+}
+h5
+{
+  font-size: 22px;
+  font-weight: 400;
+  color: rgba(102, 102, 102, 0.74);
+  background-color: rgba(236, 136, 136, 0.644);
+  padding: 8px 0;
+  border-right: 5px solid#3a3a77;
+}
+.feedback {
+ display: none;
+}
+.show {
+  display: block;
+}
+
+.DeliveredMessage {
+  font-size: 18px;
+  font-weight: 400;
+  padding: 10px 0;
+  color: #5b5b5f;
+  background-color: rgba(143, 116, 240, 0.644);
+  margin: 8px 0;
+}
+.message_content
+{
+  font-size: 22px;
+  font-weight: 400;
+  color: #ecebf3;
+  background-color: rgba(60, 201, 91, 0.644);
+  margin: 8px 0;
+  padding: 8px 0;
+}
