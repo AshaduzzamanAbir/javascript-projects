@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  background: #898989;
+}
+
+.container {
+  background: #dbd9d9;
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 50px;
+  z-index: 999;
+}
+.container.show-nav {
+  transform: rotate(-15deg);
+}
+
+.container.show-nav .circle {
+  transform: rotate(-50deg);
+}
+
+.container.show-nav + nav li {
+  transform: translateX(0%);
+  transition-delay: 0.3s;
+}
+.circle-container {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+}
+.circle {
+  width: 200px;
+  height: 200px;
+  background: #ea3e04;
+  border-radius: 50%;
+  position: relative;
+  transition: transform 0.5s linear;
+}
+
+#icon {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.circle button {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(100%);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #fff;
+  margin: 1rem 0.4rem;
+}
+.circle button#close {
+  /* top: 60%; */
+  /* left: 50%; */
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+/* .circle button#open {
+  top: 60%;
+  left: 50%;
+} */
+
+.content {
+  max-width: 1000px;
+  margin: 50px auto;
+}
+h1 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  padding: 0.6rem 0;
+}
+img {
+  width: 30%;
+  height: 60%;
+  object-fit: contain;
+}
+nav {
+  position: fixed;
+  bottom: 10%;
+  left: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  z-index: -100;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 0.4rem 0;
+  transform: translateX(-120%);
+  transition: transform 0.4s ease-in;
+  cursor: pointer;
+}
+nav ul li + li {
+  margin-left: 15px;
+  transition: transform 0.5s ease-in;
+}
+nav ul li + li + li {
+  margin-left: 30px;
+  transform: translateX(-180%);
+  transition: transform 0.6s ease-in;
+}
